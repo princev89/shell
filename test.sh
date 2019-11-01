@@ -1,3 +1,3 @@
-echo "Hiii this is p
-
-rince. weldjsks "
+echo "Enter your name:"
+read name
+echo "Hii $name"
