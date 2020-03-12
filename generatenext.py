@@ -1,8 +1,11 @@
-x = int(input('please provide any input or 0 to terminate'))
+C=0
+def generateNext(d,num):
+	return d+num
 
-while x!= 0:
-	if(x %2 == 0):
-		print(str(x) + " is an even number")
-	else:
-		print(str(x) + " is not an even it is the odd number")
-	x = int(input('please provide any input or 0 to terminate'))
+C=float(input("Please input the starting for your series\n"))
+s=float(input("Please input the d for your series\n"))
+
+print ("The series produced by this method is")
+for i in range(1,11):
+	print(generateNext(s,C))
+	C += s
