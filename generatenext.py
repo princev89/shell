@@ -6,6 +6,7 @@ C=float(input("Please input the starting for your series\n"))
 s=float(input("Please input the d for your series\n"))
 
 print ("The series produced by this method is")
-for i in range(1,11):
-	print(generateNext(s,C))
+print(str(C)+", ",end='')
+for i in range(1,10):
+	print(str(generateNext(s,C))+", ",end='')
 	C += s
